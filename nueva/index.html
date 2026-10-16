@@ -30,7 +30,7 @@
 <script>document.documentElement.className+=' js'</script>
 <link rel="stylesheet" href="estilo.css">
 </head>
-<body class="revision">
+<body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
 <header class="cab">
   <div class="cab__in">
@@ -75,23 +75,20 @@
       </div>
     <h2 class="reveal">Por qué SocioNegocio</h2>
     <ul class="cards">
-      <!-- ÍCONO PENDIENTE: línea dorada "conexión que falla" (por ahora, el nodo del logo) -->
       <li class="card reveal">
         <div class="nodo" aria-hidden="true"></div>
         <h3>Funciona aunque la conexión falle</h3>
-        <p>Consulta los negocios y publicaciones que ya cargaste sin conexión. Se actualiza cuando vuelves a conectarte.<span class="borrador">Borrador</span></p>
+        <p>Si se te va la conexión, sigues viendo los negocios y publicaciones que ya cargaste. Al volver a conectarte, se actualizan.</p>
       </li>
-      <!-- ÍCONO PENDIENTE: línea dorada "directorio + feed" -->
       <li class="card reveal">
         <div class="nodo" aria-hidden="true"></div>
         <h3>Tu negocio, visible en un solo lugar</h3>
-        <p>Un directorio para encontrar negocios y un feed para ver sus novedades: fotos, videos y publicaciones.<span class="borrador">Borrador</span></p>
+        <p>Un directorio para encontrar negocios por nombre o categoría, y un feed con sus novedades: fotos, videos, y la opción de dar me gusta, comentar y compartir.</p>
       </li>
-      <!-- ÍCONO PENDIENTE: línea dorada "hecho en Cuba / comunidad" -->
       <li class="card reveal">
         <div class="nodo" aria-hidden="true"></div>
         <h3>Hecha en Cuba, para lo nuestro</h3>
-        <p>Hecha en Cuba para apoyar la economía local: que la gente encuentre lo que emprenden sus vecinos.<span class="borrador">Borrador</span></p>
+        <p>Hecha en Cuba para apoyar la economía local: que la gente encuentre lo que emprenden sus vecinos, y que cada emprendedor se dé a conocer.</p>
       </li>
     </ul>
   </div>
@@ -104,7 +101,6 @@
     <p class="lead reveal">Capturas reales de la app, con datos de ejemplo.</p>
     <div class="galeria" tabindex="0" role="region" aria-label="Capturas de la app, desplázate hacia los lados">
       <figure class="reveal"><div class="tel"><div class="tel__pantalla"><img src="img/cap-feed.webp" width="480" height="1006" alt="Feed: publicaciones de negocios con fotos, me gusta, comentar y compartir" loading="lazy" decoding="async"></div></div><figcaption>Feed: las novedades de los negocios</figcaption></figure>
-      <!-- REVISAR: esta captura muestra la etiqueta "Made with AI" de una imagen de ejemplo. Pedir otra de Negocios sin esa etiqueta. -->
       <figure class="reveal"><div class="tel"><div class="tel__pantalla"><img src="img/cap-negocios.webp" width="480" height="1006" alt="Negocios: buscador, categorías y tarjetas de negocios con el botón Ver perfil" loading="lazy" decoding="async"></div></div><figcaption>Negocios: busca por nombre o categoría</figcaption></figure>
       <figure class="reveal"><div class="tel"><div class="tel__pantalla"><img src="img/cap-perfil.webp" width="480" height="1006" alt="Perfil de un negocio: portada, logo, categoría, ubicación y sus publicaciones" loading="lazy" decoding="async"></div></div><figcaption>El perfil de un negocio</figcaption></figure>
       <figure class="reveal"><div class="tel"><div class="tel__pantalla"><img src="img/cap-publicacion.webp" width="480" height="1006" alt="Una publicación con video, con los botones Me gusta, Comentar y Compartir" loading="lazy" decoding="async"></div></div><figcaption>Una publicación: me gusta, comentarios, compartir</figcaption></figure>
@@ -131,13 +127,17 @@
         <h3>Descarga el archivo</h3>
         <p>Toca el botón dorado. Tu navegador puede avisarte de que «este tipo de archivo puede dañar tu dispositivo»: es un aviso general para cualquier aplicación que no viene de una tienda.</p>
         <a class="btn js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar para Android">Descargar para Android</a>
-        <div class="figs"><div class="pendiente" role="img" aria-label="Captura pendiente">Captura pendiente: el aviso del navegador al descargar el archivo (de tu V2109).</div></div>
+        <!-- CAPTURA OPCIONAL pendiente: el aviso del navegador al descargar el archivo -->
       </li>
       <li class="paso">
         <span class="paso__n" aria-hidden="true">2</span>
         <h3>Permite la instalación desde esta fuente</h3>
-        <p>Si Android te lo pide, activa <strong>«Permitir desde esta fuente»</strong> (o <em>«Instalar apps desconocidas»</em>) para tu navegador o administrador de archivos, y vuelve atrás.</p>
-        <div class="figs"><div class="pendiente" role="img" aria-label="Captura pendiente">Captura pendiente: la pantalla «Permitir desde esta fuente» de tu V2109.</div></div>
+        <p>Si Android te avisa de que <strong>«de momento tu teléfono no puede instalar aplicaciones desconocidas de esta fuente»</strong>, toca <strong>«Ajustes»</strong> y activa <strong>«Autorizar de esta fuente»</strong> (en otros teléfonos dice <em>«Permitir desde esta fuente»</em>). Después vuelve atrás.</p>
+        <div class="figs">
+          <figure class="cap"><img src="img/cap-fuente-aviso.webp" width="560" height="260" alt="Aviso de Android: por tu seguridad, tu teléfono no puede instalar aplicaciones desconocidas de esta fuente, con los botones Cancelar y Ajustes" loading="lazy" decoding="async"><figcaption>El aviso: toca «Ajustes»</figcaption></figure>
+          <figure class="cap"><img src="img/cap-fuente-ajustes.webp" width="560" height="589" alt="Pantalla Instalar aplicaciones desconocidas con el interruptor Autorizar de esta fuente" loading="lazy" decoding="async"><figcaption>Activa «Autorizar de esta fuente»</figcaption></figure>
+        </div>
+        <p class="nota" style="margin-top:10px">En estas capturas la fuente es «Files by Google»; en tu teléfono puede aparecer tu navegador u otro administrador de archivos.</p>
       </li>
       <li class="paso">
         <span class="paso__n" aria-hidden="true">3</span>
@@ -149,12 +149,18 @@
           <figure class="cap"><img src="img/cap-descargas.webp" width="600" height="366" alt="Carpeta Descargas del teléfono con el archivo de instalación de SocioNegocio" loading="lazy" decoding="async"><figcaption>El archivo en <em>Descargas</em></figcaption></figure>
           <figure class="cap cap--v"><img src="img/cap-playprotect.webp" width="420" height="676" alt="Aviso de Google Play Protect: Aplicación bloqueada para proteger tu dispositivo, con la opción Instalar de todas formas" loading="lazy" decoding="async"><figcaption>El aviso de Play Protect: elige «Instalar de todas formas»</figcaption></figure>
         </div>
-        <p style="margin-top:14px">Al terminar, <strong>abre SocioNegocio</strong>: puedes explorar negocios como invitado o crear tu cuenta.</p>
+        <div class="figs">
+          <figure class="cap"><img src="img/cap-instalada.webp" width="560" height="237" alt="Aviso Aplicación instalada con los botones Hecho y Abrir" loading="lazy" decoding="async"><figcaption>Cuando diga «Aplicación instalada», toca «Abrir»</figcaption></figure>
+        </div>
+        <p style="margin-top:14px">Al abrirla, puedes explorar negocios como invitado o crear tu cuenta.</p>
       </li>
     </ol>
-    <div class="tarjeta reveal">
-      <h3 style="font-size:1.1rem;margin-bottom:8px">¿Por qué sale ese aviso de Google Play Protect?</h3>
-      <p style="margin:0;color:var(--texto-suave)">Play Protect revisa las apps de la tienda de Google. SocioNegocio se reparte directamente desde esta página, y por eso el aviso dice que no conoce otras apps de este desarrollador. Si quieres, puedes comprobar que tu archivo es el original con su huella, justo aquí abajo.<span class="borrador">Borrador</span></p>
+    <div class="tarjeta explica reveal">
+      <h3 style="font-size:1.12rem;margin-bottom:12px">El aviso de Google Play Protect: qué significa y qué hacer</h3>
+      <p><strong>Qué verás.</strong> Una pantalla que dice «Aplicación bloqueada para proteger tu dispositivo» y «Play Protect no conoce ninguna otra aplicación de este desarrollador».</p>
+      <p><strong>Por qué sale.</strong> Play Protect es el revisor de Google para las apps de su tienda. SocioNegocio no se descarga de esa tienda sino de esta página, y Google todavía no conoce a su desarrollador, así que avisa. El aviso no dice que haya un problema en la app: dice que Google no conoce al desarrollador.</p>
+      <p><strong>Qué hacer.</strong> Toca <strong>«Instalar de todas formas»</strong>, el texto pequeño que está encima del botón. El botón grande, «Entendido», solo cierra el aviso y no instala nada.</p>
+      <p><strong>Para ir con tranquilidad.</strong> Descarga el archivo solo desde esta página y, si quieres, comprueba su huella, más abajo en esta sección.</p>
     </div>
     <details id="detalle-version" class="verificar" hidden>
       <summary>Comprobar que el archivo es el original (opcional)</summary>
@@ -193,8 +199,8 @@
       <li><span>Publica fotos, videos y novedades para que te encuentren.</span></li>
     </ol>
     <div class="gratis reveal">
-      <p><strong>Tu primer negocio es gratis. Las 6 primeras publicaciones de cada negocio también.</strong><span class="borrador">Borrador</span></p>
-      <p class="nota" style="margin:0">A partir de la séptima publicación, y en opciones como negocios adicionales, videos más largos o destacar tu negocio, hay un costo. Siempre lo ves antes de confirmar.</p>
+      <p><strong>Tu primer negocio es gratis, y también las 6 primeras publicaciones de cada negocio.</strong></p>
+      <p class="nota" style="margin:0">Desde la séptima publicación, y en opciones como negocios adicionales, videos más largos o destacar tu negocio, hay un costo. La app te lo muestra antes de que confirmes nada.</p>
     </div>
     <a class="btn btn--grande js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar y registrar mi negocio">Descargar y registrar mi negocio</a>
   </div>
@@ -208,20 +214,29 @@
         <img src="img/pepito-pensar.webp" data-anim="img/pepito-pensar-anim.webp" width="240" height="279" alt="Pepito, tu guía" loading="lazy" decoding="async">
       </div>
     <h2 class="reveal">Preguntas frecuentes</h2>
-    <details class="reveal"><summary>¿Es gratis?</summary><div class="resp"><p>Descargar y usar SocioNegocio es gratis. Registrar tu primer negocio y sus 6 primeras publicaciones también. Algunas opciones para negocios (más publicaciones, videos más largos, negocios adicionales, destacar tu negocio) tienen costo, y lo ves antes de confirmar.<span class="borrador">Borrador</span></p></div></details>
-    <!-- BORRADOR A CONFIRMAR: el AndroidManifest declara solo INTERNET; falta confirmar con aapt2 sobre el APK real -->
-    <details class="reveal"><summary>¿Qué permisos pide?</summary><div class="resp"><p>Solo acceso a internet. Para elegir fotos y videos usas el selector de tu teléfono.<span class="borrador">Borrador: confirmar con aapt2</span></p></div></details>
+    <details class="reveal"><summary>¿Es gratis?</summary><div class="resp"><p>Sí. Descargar y usar SocioNegocio no cuesta nada. Registrar tu primer negocio y publicar las 6 primeras publicaciones de cada negocio también es gratis. Algunas opciones para negocios tienen costo (más publicaciones, videos más largos, negocios adicionales y destacar tu negocio), y la app te lo muestra antes de que confirmes.</p></div></details>
+    <details class="reveal"><summary>¿Necesito internet para usarla?</summary><div class="resp"><p>Para ver los negocios y publicaciones que ya cargaste, no siempre. Para crear tu cuenta, publicar, comentar o subir fotos y videos, sí necesitas conexión.</p></div></details>
+    <details class="reveal"><summary>¿Qué permisos pide?</summary><div class="resp">
+      <p>Estos son todos los permisos que aparecen en el archivo de instalación de la app:</p>
+      <ul>
+        <li><strong>Internet y estado de la red:</strong> para conectarse y saber si hay conexión.</li>
+        <li><strong>Mantener el teléfono despierto:</strong> mientras la app termina una tarea.</li>
+        <li><strong>Almacenamiento (leer y escribir):</strong> es un permiso antiguo que traen componentes que usa la app para preparar los videos y fotos que publicas. La app no te lo pide en pantalla: tú eliges las fotos y videos con el selector de tu teléfono.</li>
+      </ul>
+      <p><strong>No pide</strong> acceso a tu cámara, micrófono, ubicación, contactos ni mensajes.</p></div></details>
+    <details class="reveal"><summary>¿Qué datos guarda la app?</summary><div class="resp"><p>Lo explicamos con detalle en la <a href="privacidad.html">Política de privacidad</a>. Si quieres que borremos tu cuenta y tus datos, puedes pedirlo desde la app (<em>Mi Perfil → Eliminar mi cuenta</em>) o desde <a href="eliminar-cuenta.html">esta página</a>.</p></div></details>
     <details class="reveal"><summary>¿Quién la creó?</summary><div class="resp"><p>SocioNegocio la desarrolla <strong>SydeEliteX</strong>, en Cuba. Puedes escribirnos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a>.</p></div></details>
     <details class="reveal"><summary>¿Qué hago si no se instala?</summary><div class="resp">
       <ol>
-        <li>Comprueba que tu teléfono tenga <strong>Android 7.0 o superior</strong> y espacio libre (unos 300 MB).</li>
-        <li>Vuelve a descargar el archivo: si pesa mucho menos de lo que indica arriba, la descarga se cortó.</li>
-        <li>Si Android te lo pide, permite instalar desde esta fuente (paso 2).</li>
-        <li>Si sale el aviso de Play Protect, elige <strong>«Instalar de todas formas»</strong>.</li>
+        <li>Comprueba que tu teléfono tenga <strong>Android 7.0 o superior</strong> (<em>Ajustes → Acerca del teléfono</em>).</li>
+        <li>Libera espacio: el archivo pesa unos 60 MB y la instalación necesita más. Conviene tener unos 300 MB libres.</li>
+        <li>Vuelve a descargarlo desde esta página. Si pesa mucho menos de lo indicado arriba, la descarga se cortó; y evita archivos que te hayan pasado por mensaje.</li>
+        <li>Si Android te lo pide, autoriza la instalación desde esta fuente (paso 2).</li>
+        <li>Si sale el aviso de Play Protect, elige <strong>«Instalar de todas formas»</strong> (paso 3).</li>
       </ol>
-      <p>Si sigue sin funcionar, escríbenos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a> y cuéntanos qué teléfono tienes y qué ocurrió.<span class="borrador">Borrador</span></p></div></details>
+      <p>Si sigue sin funcionar, escríbenos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a> y cuéntanos qué teléfono tienes y qué ocurrió.</p></div></details>
     <details class="reveal"><summary>¿Cómo actualizo?</summary><div class="resp"><p>Cuando haya una versión nueva, descárgala desde esta página y ábrela igual que la primera vez. Se instala <strong>sobre la anterior</strong>, sin perder tu cuenta ni tus datos.</p></div></details>
-    <details class="reveal"><summary>¿Por qué Android me muestra un aviso?</summary><div class="resp"><p>Porque SocioNegocio no viene de una tienda de aplicaciones. Android avisa con cualquier app que se instala desde un archivo. Es normal; lo importante es descargarla solo desde esta página.</p></div></details>
+    <details class="reveal"><summary>¿Por qué Android me muestra un aviso?</summary><div class="resp"><p>Porque SocioNegocio no viene de una tienda de aplicaciones: Android avisa con cualquier app que se instala desde un archivo, y Google Play Protect puede añadir su propio aviso (lo explicamos en «Cómo instalar»). Es normal; lo importante es descargarla solo desde esta página.</p></div></details>
   </div>
 </section>
 

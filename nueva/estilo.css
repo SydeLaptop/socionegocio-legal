@@ -132,6 +132,9 @@ a{color:var(--enlace)}
 .tarjeta.dorada{background:#fff4d2;border-color:#ebd6a0}
 .tarjeta.peligro{background:#f8e4e1;border-color:#e8c2bd}
 .tarjeta ul{margin:0}
+.explica p{margin:0 0 .8em;color:var(--texto-suave)}
+.explica p:last-child{margin-bottom:0}
+.explica strong{color:var(--texto)}
 .huella{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;line-height:1.5;word-break:break-all;background:var(--crema-2);border:1px solid var(--linea);border-radius:10px;padding:10px 12px;margin:8px 0 2px}
 .verificar{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:6px 18px;margin:22px 0 0}
 .verificar summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}
