@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descargar SocioNegocio para Android</title>
+<meta name="description" content="Descarga SocioNegocio, el directorio de negocios y publicaciones para emprendedores, para teléfonos Android.">
+<meta property="og:title" content="Descargar SocioNegocio para Android">
+<meta property="og:description" content="Directorio de negocios y publicaciones para emprendedores, pensado para funcionar también con conexión limitada.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.png">
+<link rel="preload" href="fuentes/tektur-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="sitio">
+  <div class="interior">
+    <a class="marca" href="index.html">Socio<span>Negocio</span></a>
+    <nav>
+      <a href="index.html" aria-current="page">Descargar</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="eliminar-cuenta.html">Eliminar mi cuenta</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="portada">
+  <img class="logo" src="logo.png" alt="" width="84" height="84" style="display:none" onload="this.style.display='block'" onerror="this.remove()">
+  <h1>SocioNegocio</h1>
+  <p class="lema">Directorio de negocios y publicaciones para emprendedores, pensado para funcionar también con conexión limitada.</p>
+  <a id="descargar" class="boton grande" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk">Descargar SocioNegocio</a>
+  <p id="datos-version" class="datos-version suave">Para teléfonos Android 7.0 o superior</p>
+</section>
+
+<div id="detalle-version" class="tarjeta" hidden>
+  <h3 style="margin-top:0">Versión <span id="v-numero"></span></h3>
+  <p id="v-info" class="suave" style="margin:0 0 6px"></p>
+  <ul id="v-notas" class="novedades" hidden></ul>
+  <div id="v-huella-bloque" hidden>
+    <p class="suave" style="margin:10px 0 0">Huella SHA-256 del archivo (opcional, para comprobar que es el original):</p>
+    <div id="v-huella" class="huella"></div>
+  </div>
+</div>
+
+<h2>Cómo instalarla</h2>
+<p class="suave">Los nombres de los botones pueden variar un poco según la marca de tu teléfono y su versión de Android.</p>
+<ol class="pasos">
+  <li><strong>Descarga el archivo</strong> con el botón de arriba. Tu navegador puede avisarte de que «este tipo de archivo puede dañar tu dispositivo»: es un aviso general para cualquier aplicación que no viene de una tienda. Si la descargaste desde esta página, puedes continuar.</li>
+  <li><strong>Ábrelo</strong> desde la notificación de descarga o desde la carpeta <em>Descargas</em> de tu teléfono (se llama <em>SocioNegocio.apk</em>).</li>
+  <li>Si Android te lo pide, activa <strong>«Permitir desde esta fuente»</strong> (o <em>«Instalar apps desconocidas»</em>) para tu navegador o administrador de archivos, y vuelve atrás.</li>
+  <li>Toca <strong>Instalar</strong>. Si aparece un aviso de <em>Google Play Protect</em>, elige <strong>«Más detalles»</strong> y luego <strong>«Instalar de todos modos»</strong>. Aparece porque SocioNegocio no se distribuye por la tienda de Google Play.</li>
+  <li><strong>Abre SocioNegocio</strong>: puedes explorar negocios como invitado o crear tu cuenta.</li>
+</ol>
+
+<h2>Cómo actualizarla</h2>
+<p>Cuando haya una versión nueva, descárgala desde esta página y ábrela igual que la primera vez. Se instala <strong>sobre la anterior</strong>, sin perder tu cuenta ni tus datos.</p>
+
+<h2>Descárgala solo desde aquí</h2>
+<div class="tarjeta dorada">
+  <ul style="margin:0">
+    <li>Esta es la <strong>única página oficial</strong> de descarga de SocioNegocio.</li>
+    <li>Nadie del equipo te pedirá tu contraseña ni códigos por mensaje.</li>
+    <li>Si alguien te pasa el archivo por Bluetooth o por una aplicación para compartir archivos, asegúrate de que sea de alguien de confianza y de que sea la última versión. Ante la duda, descárgalo desde esta página.</li>
+    <li>Quien quiera comprobar que el archivo es el original puede comparar su huella SHA-256 con la que aparece arriba.</li>
+  </ul>
+</div>
+
+<h2>¿Algo no funciona?</h2>
+<p>Escríbenos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a> y cuéntanos qué teléfono tienes y qué ocurrió.</p>
+
+<div class="tarjeta">
+  <h3 style="margin-top:0">Tus datos</h3>
+  <p>Qué datos usa SocioNegocio y cómo puedes pedir que los eliminemos.</p>
+  <a class="boton" href="privacidad.html">Política de privacidad</a>
+  <a class="boton" href="eliminar-cuenta.html">Eliminar mi cuenta</a>
+</div>
+
+</main>
+<footer class="sitio">
+  <div class="interior">
+    SocioNegocio es una aplicación desarrollada por <strong>SydeEliteX</strong>.
+    Contacto: <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a><br>
+    Esta página y el archivo de descarga se alojan en GitHub.
+  </div>
+</footer>
+
+<script>
+/* Los datos de la versión salen de version.json. Si no se pueden leer, la página
+   funciona igual: el botón de descarga ya apunta a la última versión publicada. */
+(function () {
+  var boton = document.getElementById('descargar');
+
+  function texto(id, valor) {
+    var e = document.getElementById(id);
+    if (e) { e.textContent = valor; }
+  }
+
+  function mostrarProximamente() {
+    boton.textContent = 'Próximamente';
+    boton.classList.add('apagado');
+    boton.removeAttribute('href');
+    boton.setAttribute('aria-disabled', 'true');
+    texto('datos-version', 'Estamos terminando la primera versión. Vuelve pronto.');
+  }
+
+  fetch('version.json', { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) { throw new Error('HTTP ' + r.status); }
+      return r.json();
+    })
+    .then(function (v) {
+      if (v.url_descarga) { boton.setAttribute('href', v.url_descarga); }
+
+      if (v.disponible === false) {
+        mostrarProximamente();
+        return;
+      }
+
+      var partes = [];
+      if (v.version) { partes.push('Versión ' + v.version); }
+      if (v.fecha) { partes.push(v.fecha); }
+      if (v.tamano_mb) { partes.push(v.tamano_mb + ' MB'); }
+      partes.push('Android ' + (v.android_minimo || '7.0') + ' o superior');
+      texto('datos-version', partes.join(' · '));
+
+      if (!v.version) { return; }
+
+      texto('v-numero', v.version);
+      texto('v-info', v.fecha ? 'Publicada el ' + v.fecha + '.' : '');
+
+      if (v.notas && v.notas.length) {
+        var lista = document.getElementById('v-notas');
+        lista.textContent = '';
+        v.notas.forEach(function (nota) {
+          var li = document.createElement('li');
+          li.textContent = nota;
+          lista.appendChild(li);
+        });
+        lista.hidden = false;
+      }
+
+      if (v.sha256) {
+        texto('v-huella', v.sha256);
+        document.getElementById('v-huella-bloque').hidden = false;
+      }
+
+      document.getElementById('detalle-version').hidden = false;
+    })
+    .catch(function () { /* sin datos de versión: se queda la página básica */ });
+})();
+</script>
+</body>
+</html>
