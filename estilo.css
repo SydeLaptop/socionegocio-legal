@@ -208,3 +208,15 @@ body.revision .borrador{display:inline-block;background:#fff3c4;color:#5a4200;bo
 .legal .pasos{counter-reset:paso;list-style:none;padding-left:0}
 .legal .pasos li{counter-increment:paso;position:relative;padding:4px 0 4px 46px;margin:12px 0}
 .legal .pasos li::before{content:counter(paso);position:absolute;left:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--cafe);color:var(--oro);border:2px solid var(--oro);font:700 .95rem var(--f-titulos);display:flex;align-items:center;justify-content:center}
+
+/* ---------- Páginas legales: tablas apiladas en pantallas estrechas (tablas apiladas) ----------
+   La tabla de tres columnas era más ancha que un móvil y la página se salía por los lados.
+   Cada fila pasa a ser un bloque, con el nombre de su columna (atributo data-et) encima del dato. */
+@media(max-width:600px){
+  .legal table,.legal tbody,.legal tr,.legal td{display:block;width:100%}
+  .legal thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .legal tr{padding:8px 0;border-bottom:1px solid var(--linea)}
+  .legal tr:last-child{border-bottom:0}
+  .legal td{border:0;padding:4px 14px}
+  .legal td[data-et]::before{content:attr(data-et);display:block;font-weight:600;font-size:.8rem;color:var(--texto-suave)}
+}
