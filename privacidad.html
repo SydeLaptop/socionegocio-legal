@@ -30,7 +30,7 @@
 <main id="contenido">
 
 <h1>Política de privacidad</h1>
-<p class="suave">Aplicación: <strong>SocioNegocio</strong> (Android) · Desarrollador: <strong>SydeEliteX</strong> · Última actualización: 16 de octubre de 2026</p>
+<p class="suave">Aplicación: <strong>SocioNegocio</strong> (Android) · Desarrollador: <strong>SydeEliteX</strong> · Última actualización: 27 de octubre de 2026</p>
 <p>Esta política explica qué datos personales trata SocioNegocio, para qué, con quién se comparten y cómo puedes controlarlos. Al usar la aplicación aceptas lo descrito aquí.</p>
 
 <h2>1. Quién es el responsable</h2>
@@ -46,14 +46,19 @@
     <tr><td data-et="Categoría"><strong>Contenido que publicas</strong></td><td data-et="Datos">Publicaciones (texto, fotos y videos), comentarios, «me gusta» y compartidos.</td></tr>
     <tr><td data-et="Categoría"><strong>Pedidos y pagos</strong></td><td data-et="Datos">Tipo de pedido (por ejemplo, destacar un negocio o impulsar una publicación), monto, número de transacción, <strong>captura de pantalla del comprobante</strong> y estado. Los pagos se hacen fuera de la app: <strong>no recibimos ni guardamos datos de tarjetas</strong>.</td></tr>
     <tr><td data-et="Categoría"><strong>Reportes</strong></td><td data-et="Datos">Los reportes de contenido que envías y el motivo que escribes.</td></tr>
+    <tr><td data-et="Categoría"><strong>Notificaciones</strong></td><td data-et="Datos">Un identificador de notificaciones de tu teléfono (lo genera Firebase, de Google), asociado a tu cuenta, y la fecha en que se usó por última vez. También guardamos los avisos que recibes (por ejemplo, «Tu pago fue aprobado»).</td></tr>
     <tr><td data-et="Categoría"><strong>Datos técnicos</strong></td><td data-et="Datos">El estado de sincronización de tu información. Como cualquier servidor, el nuestro puede registrar la dirección IP y datos técnicos de cada petición (fecha, hora y tipo de petición).</td></tr>
   </tbody>
 </table>
 <p><strong>No recopilamos tu ubicación</strong> ni accedemos a tus contactos. La dirección de un negocio es un texto que escribes tú.</p>
 
+<h3>Notificaciones</h3>
+<p>La app puede avisarte en el teléfono de cosas que te importan: el estado de tus pagos, la revisión de tus denuncias y los comentarios en tus publicaciones. En Android 13 o superior, la app te pide permiso para mostrar notificaciones; si no lo aceptas, la app funciona igual y verás esos avisos dentro de la app, pero no te llegarán al teléfono.</p>
+<p>Para enviártelas, el servidor guarda un identificador de notificaciones de tu teléfono y se lo entrega a Firebase Cloud Messaging (Google), que hace llegar el aviso al dispositivo. Al cerrar sesión, la app pide al servidor que elimine el identificador de ese teléfono. Según tus ajustes de Android, el texto de una notificación (por ejemplo, un fragmento de un comentario) puede verse en la pantalla de bloqueo.</p>
+
 <h3>Datos guardados en tu dispositivo</h3>
-<p>Para que la app funcione también con conexión limitada, guarda en tu teléfono: tu sesión, tus datos de cuenta básicos, una copia local del directorio de negocios, el último Feed que viste, las imágenes ya vistas, las publicaciones a las que diste «me gusta» (para mostrártelas al instante) y copias temporales de las imágenes que eliges para publicar.</p>
-<p>Al cerrar sesión se borran de ese dispositivo tu sesión y los datos de tu cuenta. Tus «me gusta» guardados se borran cuando eliminas tu cuenta, y las copias temporales de imágenes las limpia la app automáticamente con el tiempo. La copia del directorio, el último Feed visto y las imágenes ya vistas son información que ya era pública dentro de la app. Todo permanece en el teléfono hasta que desinstales SocioNegocio o borres sus datos desde los ajustes de Android.</p>
+<p>Para que la app funcione también con conexión limitada, guarda en tu teléfono: tu sesión, tus datos de cuenta básicos, una copia local del directorio de negocios, el último Feed que viste, las imágenes ya vistas, las publicaciones a las que diste «me gusta» (para mostrártelas al instante), los últimos avisos que viste y copias temporales de las imágenes que eliges para publicar.</p>
+<p>Al cerrar sesión se borran de ese dispositivo tu sesión y los datos de tu cuenta. Los avisos que ya viste se quedan guardados en el teléfono, a nombre de tu cuenta, aunque cierres sesión. Tus «me gusta» guardados se borran cuando eliminas tu cuenta, y las copias temporales de imágenes las limpia la app automáticamente con el tiempo. La copia del directorio, el último Feed visto y las imágenes ya vistas son información que ya era pública dentro de la app. Todo permanece en el teléfono hasta que desinstales SocioNegocio o borres sus datos desde los ajustes de Android.</p>
 
 <h2>3. Para qué usamos tus datos</h2>
 <ul>
@@ -63,6 +68,7 @@
   <li>Gestionar pedidos y pagos, y verificar los comprobantes.</li>
   <li>Moderar contenido, atender reportes y prevenir abusos y fraude.</li>
   <li>Enviarte los correos necesarios para que la cuenta funcione (por ejemplo, la verificación).</li>
+  <li>Enviarte avisos al teléfono (notificaciones) sobre tus pagos, tus denuncias y los comentarios en tus publicaciones.</li>
 </ul>
 <p>No vendemos tus datos ni mostramos publicidad de terceros.</p>
 
@@ -76,6 +82,7 @@
   <li><strong>Supabase</strong>: almacena las imágenes y los videos.</li>
   <li>El proveedor donde está alojada nuestra <strong>base de datos</strong>.</li>
   <li><strong>Brevo</strong>: envía los correos de verificación (recibe tu correo y nombre).</li>
+  <li><strong>Google (Firebase Cloud Messaging)</strong>: hace llegar las notificaciones a tu teléfono (recibe el identificador de notificaciones del dispositivo y el texto del aviso).</li>
   <li><strong>GitHub</strong>: aloja esta página web y el archivo de descarga de la aplicación (recibe la dirección IP de quien visita la página o descarga el archivo).</li>
 </ul>
 <p>También podemos comunicar datos cuando una ley o una autoridad competente lo exija.</p>
@@ -97,6 +104,7 @@
 <ul>
   <li><strong>Acceder y corregir</strong> tus datos: desde <em>Mi Perfil → Editar perfil</em>.</li>
   <li><strong>Eliminar</strong> tu cuenta y tus datos: desde <em>Mi Perfil → Eliminar mi cuenta</em>, o escribiéndonos.</li>
+  <li><strong>Controlar las notificaciones</strong>: puedes desactivarlas cuando quieras desde los ajustes de Android (<em>Ajustes → Aplicaciones → SocioNegocio → Notificaciones</em>).</li>
   <li><strong>Consultar o solicitar cualquier otra cosa</strong> sobre tus datos: <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a>.</li>
 </ul>
 

@@ -217,10 +217,12 @@
     <details class="reveal"><summary>¿Es gratis?</summary><div class="resp"><p>Sí. Descargar y usar SocioNegocio no cuesta nada. Registrar tu primer negocio y publicar las 6 primeras publicaciones de cada negocio también es gratis. Algunas opciones para negocios tienen costo (más publicaciones, videos más largos, negocios adicionales y destacar tu negocio), y la app te lo muestra antes de que confirmes.</p></div></details>
     <details class="reveal"><summary>¿Necesito internet para usarla?</summary><div class="resp"><p>Para ver los negocios y publicaciones que ya cargaste, no siempre. Para crear tu cuenta, publicar, comentar o subir fotos y videos, sí necesitas conexión.</p></div></details>
     <details class="reveal"><summary>¿Qué permisos pide?</summary><div class="resp">
-      <p>Estos son todos los permisos que aparecen en el archivo de instalación de la app:</p>
+      <p>Estos son todos los permisos que la app pide según su archivo de instalación (sin contar uno interno que Android agrega para proteger a la propia app):</p>
       <ul>
         <li><strong>Internet y estado de la red:</strong> para conectarse y saber si hay conexión.</li>
-        <li><strong>Mantener el teléfono despierto:</strong> mientras la app termina una tarea.</li>
+        <li><strong>Notificaciones y vibración:</strong> para avisarte en el teléfono de tus pagos, tus denuncias y los comentarios en tus publicaciones. En Android 13 o superior, la app te pide permiso en pantalla y puedes negarlo; sin él, esos avisos los ves dentro de la app.</li>
+        <li><strong>Recibir notificaciones (Google Firebase):</strong> permiso interno del servicio que hace llegar los avisos a tu teléfono.</li>
+        <li><strong>Mantener el teléfono despierto:</strong> mientras la app termina una tarea o recibe una notificación.</li>
         <li><strong>Almacenamiento (leer y escribir):</strong> es un permiso antiguo que traen componentes que usa la app para preparar los videos y fotos que publicas. La app no te lo pide en pantalla: tú eliges las fotos y videos con el selector de tu teléfono.</li>
       </ul>
       <p><strong>No pide</strong> acceso a tu cámara, micrófono, ubicación, contactos ni mensajes.</p></div></details>
