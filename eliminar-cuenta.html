@@ -19,12 +19,14 @@
 <header class="cab">
   <div class="cab__in">
     <a class="cab__logo" href="index.html" aria-label="SocioNegocio, inicio"><img src="img/logo-horizontal-oscuro.svg" width="115" height="34" alt="SocioNegocio"></a>
-    <nav class="cab__nav" aria-label="Principal">
+    <nav class="cab__nav" id="cab-menu" aria-label="Principal">
       <a href="index.html#instalar">Cómo instalar</a>
       <a href="index.html#negocios">Para negocios</a>
+      <a href="servicios.html">Servicios</a>
       <a href="index.html#preguntas">Preguntas</a>
     </nav>
     <a class="btn btn--sm" href="index.html#inicio">Descargar</a>
+    <button class="cab__menu" type="button" aria-expanded="false" aria-controls="cab-menu" aria-label="Abrir menú"><span class="cab__menu-barras" aria-hidden="true"></span></button>
   </div>
 </header>
 <main id="contenido">
@@ -108,6 +110,8 @@
       <nav aria-label="Enlaces del pie">
         <ul>
           <li><a href="index.html#instalar">Cómo instalar</a></li>
+          <li><a href="servicios.html">Servicios y guía</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
           <li><a href="privacidad.html">Política de privacidad</a></li>
           <li><a href="eliminar-cuenta.html">Eliminar mi cuenta</a></li>
         </ul>

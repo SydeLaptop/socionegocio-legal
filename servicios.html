@@ -35,13 +35,14 @@
 <header class="cab">
   <div class="cab__in">
     <a class="cab__logo" href="index.html" aria-label="SocioNegocio, inicio"><img src="img/logo-horizontal-oscuro.svg" width="115" height="34" alt="SocioNegocio"></a>
-    <nav class="cab__nav" aria-label="Principal">
+    <nav class="cab__nav" id="cab-menu" aria-label="Principal">
       <a href="index.html#instalar">Cómo instalar</a>
       <a href="index.html#negocios">Para negocios</a>
       <a href="servicios.html" aria-current="page">Servicios</a>
       <a href="index.html#preguntas">Preguntas</a>
     </nav>
     <a class="btn btn--sm js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar">Descargar</a>
+    <button class="cab__menu" type="button" aria-expanded="false" aria-controls="cab-menu" aria-label="Abrir menú"><span class="cab__menu-barras" aria-hidden="true"></span></button>
   </div>
 </header>
 <main id="contenido">
@@ -97,7 +98,7 @@
         <p>Los videos de hasta 15 segundos no cuestan nada.</p>
       </li>
     </ul>
-    <p class="nota reveal" style="margin-top:18px">Las publicaciones se eliminan solas a los 10 días. Si fijas o impulsas una, sigue visible mientras lo esté. La app te muestra un aviso antes de que desaparezca.</p>
+    <p class="nota reveal" style="margin-top:18px">Las publicaciones se eliminan solas a los 10 días. Si fijas o impulsas una, sigue visible mientras lo esté. La app te lo avisa al publicar y, en tu perfil, te muestra cuántos días le quedan a cada una.</p>
   </div>
 </section>
 
@@ -113,7 +114,7 @@
     <ul class="sv-grid">
       <li class="sv-card reveal" id="destacado">
         <h3>Negocio destacado</h3>
-        <p>Tu negocio aparece en la sección <strong>Destacados</strong> del Lobby, lo primero que mucha gente mira al abrir la app.</p>
+        <p>Tu negocio aparece en la sección <strong>Negocios Destacados</strong> del Lobby, lo primero que mucha gente mira al abrir la app, y va primero en la lista de Negocios.</p>
         <ul class="sv-precios">
           <li><span>7 días</span><b>600 CUP</b></li>
           <li><span>30 días</span><b>1500 CUP</b></li>
@@ -123,7 +124,7 @@
       </li>
       <li class="sv-card reveal" id="impulso">
         <h3>Impulso en el Feed</h3>
-        <p>Una de tus publicaciones sube al inicio del <strong>Feed general</strong>, donde llega a todos los usuarios.</p>
+        <p>Una de tus publicaciones aparece en la fila <strong>Publicaciones Impulsadas</strong>, arriba en el Feed y en el Lobby, donde la ve todo el que entra a la app.</p>
         <ul class="sv-precios">
           <li><span>7 días</span><b>200 CUP</b></li>
           <li><span>30 días</span><b>800 CUP</b></li>
@@ -146,7 +147,7 @@
         <ul class="sv-precios">
           <li><span>Por cada video</span><b>800 CUP</b></li>
         </ul>
-        <p class="sv-nota">Si ya usaste tus 4 publicaciones gratis, la app te muestra el total antes de que confirmes.</p>
+        <p class="sv-nota">Si ya tienes tus 4 publicaciones gratis activas, el total es de <strong>850 CUP</strong>: los 800 del video más los 50 de una publicación adicional. La app te muestra el total antes de que confirmes.</p>
         <p class="sv-conviene"><strong>Te conviene si</strong> quieres mostrar un producto en acción, un recorrido o un antes y después.</p>
       </li>
       <li class="sv-card reveal" id="negocio-adicional">
@@ -176,24 +177,26 @@
       <li class="paso">
         <span class="paso__n" aria-hidden="true">2</span>
         <h3>Haz la transferencia</h3>
-        <p>Págala por tu banco o por Transfermóvil, por el monto exacto de tu pedido.</p>
+        <p>Págala por Transfermóvil o EnZona, por el monto exacto de tu pedido.</p>
       </li>
       <li class="paso">
         <span class="paso__n" aria-hidden="true">3</span>
-        <h3>Registra el número de transacción</h3>
-        <p>Escríbelo en la app, en tu pedido. Cada número de transacción se puede usar una sola vez.</p>
+        <h3>Registra tu pago en la app</h3>
+        <p>En tu pedido, escribe el número de transacción y adjunta la captura del SMS de confirmación. Cada número de transacción se puede usar una sola vez.</p>
       </li>
       <li class="paso">
         <span class="paso__n" aria-hidden="true">4</span>
         <h3>Verificamos y se activa</h3>
-        <p>Comprobamos tu transferencia y te avisamos dentro de la app si fue aprobada o rechazada. Si se aprueba, el servicio se activa.</p>
+        <p>Comprobamos tu transferencia y te avisamos dentro de la app, y con una notificación en tu teléfono si las tienes activadas, si fue aprobada o rechazada. Si se aprueba, el servicio se activa.</p>
       </li>
     </ol>
     <div class="tarjeta dorada reveal">
       <ul>
         <li><strong>Registra tu pago pronto.</strong> Si no lo registras en 24 horas, el pedido vence y tendrás que crear otro.</li>
         <li><strong>Si te lo rechazan</strong> por un dato mal escrito, puedes corregir el número de transacción e intentarlo de nuevo en el mismo pedido.</li>
-        <li><strong>Guarda el mensaje de tu banco</strong> hasta ver tu servicio activo.</li>
+        <li><strong>Guarda el SMS de confirmación</strong> hasta ver tu servicio activo.</li>
+        <li><strong>Tus datos de pago.</strong> Guardamos el número de transacción y la captura solo para verificar el pago; no recibimos datos de tarjetas. Más en la <a href="privacidad.html#datos">Política de privacidad</a>.</li>
+        <li><strong>¿Dudas con un pago?</strong> Escríbenos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a> o mira las <a href="index.html#preguntas">preguntas frecuentes</a>.</li>
       </ul>
     </div>
   </div>
@@ -216,7 +219,7 @@
       </li>
       <li class="sv-card reveal">
         <h3>Tengo una oferta con fecha</h3>
-        <p>Publícala e impúlsala durante 7 días para que aparezca arriba en el Feed mientras dure.</p>
+        <p>Publícala e impúlsala durante 7 días para que aparezca en la fila de Publicaciones Impulsadas mientras dure.</p>
         <p class="sv-total">Impulso 7 días: <b>200 CUP</b></p>
       </li>
       <li class="sv-card reveal">
@@ -266,7 +269,7 @@
       <li class="card reveal">
         <div class="nodo" aria-hidden="true"></div>
         <h3>Busca lo que necesitas</h3>
-        <p>Usa el buscador y las categorías. Escribe lo que buscas, como un producto, un servicio o un barrio, y la app lo busca en los negocios y sus publicaciones.</p>
+        <p>Usa el buscador y las categorías. Escribe lo que buscas, como <strong>«zapatos»</strong> o <strong>«aretes»</strong>: la app te muestra los negocios de la categoría que corresponde (por ejemplo, Moda) aunque esa palabra no esté escrita, y también busca en nombres, descripciones, direcciones y publicaciones.</p>
       </li>
       <li class="card reveal">
         <div class="nodo" aria-hidden="true"></div>
@@ -314,6 +317,20 @@
   </div>
 </section>
 
+<!-- ==================== SIGUE EXPLORANDO ==================== -->
+<section class="seccion" id="explorar">
+  <div class="in">
+    <h2 class="reveal">Sigue explorando</h2>
+    <p class="lead reveal">Todo lo que puedes consultar antes de descargar o cuando tengas una duda.</p>
+    <ul class="sv-links reveal">
+      <li><a href="index.html#instalar"><b>Cómo instalar</b><span>Descarga la app e instálala en 3 pasos.</span></a></li>
+      <li><a href="index.html#preguntas"><b>Preguntas frecuentes</b><span>Permisos, actualizaciones y qué hacer si no se instala.</span></a></li>
+      <li><a href="privacidad.html"><b>Política de privacidad</b><span>Qué datos guarda la app y cómo los controlas.</span></a></li>
+      <li><a href="eliminar-cuenta.html"><b>Eliminar mi cuenta</b><span>Cómo pedir que borremos tu cuenta y tus datos.</span></a></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ==================== LLAMADA FINAL ==================== -->
 <section class="cta">
   <div class="in">
@@ -337,6 +354,7 @@
         <ul>
           <li><a href="index.html#instalar">Cómo instalar</a></li>
           <li><a href="servicios.html">Servicios y guía</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
           <li><a href="privacidad.html">Política de privacidad</a></li>
           <li><a href="eliminar-cuenta.html">Eliminar mi cuenta</a></li>
         </ul>

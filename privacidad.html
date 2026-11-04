@@ -19,12 +19,14 @@
 <header class="cab">
   <div class="cab__in">
     <a class="cab__logo" href="index.html" aria-label="SocioNegocio, inicio"><img src="img/logo-horizontal-oscuro.svg" width="115" height="34" alt="SocioNegocio"></a>
-    <nav class="cab__nav" aria-label="Principal">
+    <nav class="cab__nav" id="cab-menu" aria-label="Principal">
       <a href="index.html#instalar">Cómo instalar</a>
       <a href="index.html#negocios">Para negocios</a>
+      <a href="servicios.html">Servicios</a>
       <a href="index.html#preguntas">Preguntas</a>
     </nav>
     <a class="btn btn--sm" href="index.html#inicio">Descargar</a>
+    <button class="cab__menu" type="button" aria-expanded="false" aria-controls="cab-menu" aria-label="Abrir menú"><span class="cab__menu-barras" aria-hidden="true"></span></button>
   </div>
 </header>
 <main id="contenido">
@@ -33,18 +35,18 @@
 <p class="suave">Aplicación: <strong>SocioNegocio</strong> (Android) · Desarrollador: <strong>SydeEliteX</strong> · Última actualización: 1 de noviembre de 2026</p>
 <p>Esta política explica qué datos personales trata SocioNegocio, para qué, con quién se comparten y cómo puedes controlarlos. Al usar la aplicación aceptas lo descrito aquí.</p>
 
-<h2>1. Quién es el responsable</h2>
+<h2 id="responsable">1. Quién es el responsable</h2>
 <p>SocioNegocio es desarrollada y operada por <strong>SydeEliteX</strong>. Para cualquier consulta sobre privacidad escríbenos a <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a>.</p>
 <p>La aplicación se distribuye como archivo de instalación (APK) desde la <a href="index.html">página de descarga</a> de este mismo sitio.</p>
 
-<h2>2. Qué datos recopilamos</h2>
+<h2 id="datos">2. Qué datos recopilamos</h2>
 <table>
   <thead><tr><th>Categoría</th><th>Datos</th></tr></thead>
   <tbody>
     <tr><td data-et="Categoría"><strong>Cuenta</strong></td><td data-et="Datos">Nombre, correo electrónico, contraseña (se guarda cifrada, no podemos leerla), teléfono (opcional) y foto de perfil (opcional).</td></tr>
     <tr><td data-et="Categoría"><strong>Tus negocios</strong></td><td data-et="Datos">Nombre, categoría, descripción, dirección, teléfono e imágenes (logo, portada y fotos).</td></tr>
     <tr><td data-et="Categoría"><strong>Contenido que publicas</strong></td><td data-et="Datos">Publicaciones (texto, fotos y videos), comentarios, «me gusta» y compartidos.</td></tr>
-    <tr><td data-et="Categoría"><strong>Pedidos y pagos</strong></td><td data-et="Datos">Tipo de pedido (por ejemplo, destacar un negocio o impulsar una publicación), monto, número de transacción, <strong>captura de pantalla del comprobante</strong> y estado. Los pagos se hacen fuera de la app: <strong>no recibimos ni guardamos datos de tarjetas</strong>.</td></tr>
+    <tr><td data-et="Categoría"><strong>Pedidos y pagos</strong></td><td data-et="Datos">Tipo de pedido (por ejemplo, destacar un negocio o impulsar una publicación), monto, número de transacción, <strong>captura de pantalla del comprobante</strong> y estado. Los pagos se hacen fuera de la app: <strong>no recibimos ni guardamos datos de tarjetas</strong>. Cómo se paga, paso a paso: <a href="servicios.html#pagar">Servicios y guía</a>.</td></tr>
     <tr><td data-et="Categoría"><strong>Reportes</strong></td><td data-et="Datos">Los reportes de contenido que envías y el motivo que escribes.</td></tr>
     <tr><td data-et="Categoría"><strong>Notificaciones</strong></td><td data-et="Datos">Un identificador de notificaciones de tu teléfono (lo genera Firebase, de Google), asociado a tu cuenta, y la fecha en que se usó por última vez. También guardamos los avisos que recibes (por ejemplo, «Tu pago fue aprobado»).</td></tr>
     <tr><td data-et="Categoría"><strong>Datos técnicos</strong></td><td data-et="Datos">El estado de sincronización de tu información. Como cualquier servidor, el nuestro puede registrar la dirección IP y datos técnicos de cada petición (fecha, hora y tipo de petición).</td></tr>
@@ -60,7 +62,7 @@
 <p>Para que la app funcione también con conexión limitada, guarda en tu teléfono: tu sesión, tus datos de cuenta básicos, una copia local del directorio de negocios, el último Feed que viste, las imágenes ya vistas, las publicaciones a las que diste «me gusta» (para mostrártelas al instante), los últimos avisos que viste y copias temporales de las imágenes que eliges para publicar.</p>
 <p>Al cerrar sesión se borran de ese dispositivo tu sesión y los datos de tu cuenta. Los avisos que ya viste se quedan guardados en el teléfono, a nombre de tu cuenta, aunque cierres sesión. Tus «me gusta» guardados se borran cuando eliminas tu cuenta, y las copias temporales de imágenes las limpia la app automáticamente con el tiempo. La copia del directorio, el último Feed visto y las imágenes ya vistas son información que ya era pública dentro de la app. Todo permanece en el teléfono hasta que desinstales SocioNegocio o borres sus datos desde los ajustes de Android.</p>
 
-<h2>3. Para qué usamos tus datos</h2>
+<h2 id="uso">3. Para qué usamos tus datos</h2>
 <ul>
   <li>Crear y mantener tu cuenta, y verificar tu correo.</li>
   <li>Mostrar el directorio de negocios y el Feed, y permitirte publicar, comentar y reaccionar.</li>
@@ -72,7 +74,7 @@
 </ul>
 <p>No vendemos tus datos ni mostramos publicidad de terceros.</p>
 
-<h2>4. Quién puede ver tus datos</h2>
+<h2 id="terceros">4. Quién puede ver tus datos</h2>
 <h3>Otros usuarios</h3>
 <p>Es público lo que decides publicar: tus negocios, tus publicaciones, tus comentarios y el nombre de tu cuenta. Tu correo, tu teléfono personal y tus pedidos <strong>no</strong> se muestran a otros usuarios.</p>
 <h3>Proveedores que nos ayudan a operar la app</h3>
@@ -87,10 +89,10 @@
 </ul>
 <p>También podemos comunicar datos cuando una ley o una autoridad competente lo exija.</p>
 
-<h2>5. Seguridad</h2>
+<h2 id="seguridad">5. Seguridad</h2>
 <p>La comunicación entre la app y el servidor viaja cifrada (HTTPS). Las contraseñas se guardan cifradas y la sesión se almacena en el almacenamiento seguro del dispositivo. Ningún sistema es completamente infalible, pero aplicamos estas medidas para proteger tu información.</p>
 
-<h2>6. Cuánto tiempo conservamos tus datos</h2>
+<h2 id="conservacion">6. Cuánto tiempo conservamos tus datos</h2>
 <ul>
   <li>Mientras tu cuenta esté activa, para poder prestar el servicio.</li>
   <li>Si eliminas tu cuenta: se desactiva de inmediato y, a los <strong>30 días</strong>, se borran tus datos personales (puedes cancelar iniciando sesión dentro de ese plazo).</li>
@@ -100,7 +102,7 @@
 </ul>
 <p>Detalles completos en la página <a href="eliminar-cuenta.html">Eliminar mi cuenta</a>.</p>
 
-<h2>7. Tus derechos y cómo ejercerlos</h2>
+<h2 id="derechos">7. Tus derechos y cómo ejercerlos</h2>
 <ul>
   <li><strong>Acceder y corregir</strong> tus datos: desde <em>Mi Perfil → Editar perfil</em>.</li>
   <li><strong>Eliminar</strong> tu cuenta y tus datos: desde <em>Mi Perfil → Eliminar mi cuenta</em>, o escribiéndonos.</li>
@@ -108,13 +110,13 @@
   <li><strong>Consultar o solicitar cualquier otra cosa</strong> sobre tus datos: <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a>.</li>
 </ul>
 
-<h2>8. Menores de edad</h2>
+<h2 id="menores">8. Menores de edad</h2>
 <p>SocioNegocio no está dirigida a menores de 15 años y no recopilamos a sabiendas datos de menores. Si crees que un menor nos dio sus datos, escríbenos y los eliminaremos.</p>
 
-<h2>9. Cambios en esta política</h2>
+<h2 id="cambios">9. Cambios en esta política</h2>
 <p>Si la modificamos, publicaremos la nueva versión en esta página y actualizaremos la fecha de arriba. Si los cambios son importantes, te lo comunicaremos también dentro de la app.</p>
 
-<h2>10. Contacto</h2>
+<h2 id="contacto">10. Contacto</h2>
 <p><strong>SydeEliteX</strong> · <a href="mailto:socionegocio27@gmail.com">socionegocio27@gmail.com</a></p>
 </main>
 <footer class="pie">
@@ -128,6 +130,8 @@
       <nav aria-label="Enlaces del pie">
         <ul>
           <li><a href="index.html#instalar">Cómo instalar</a></li>
+          <li><a href="servicios.html">Servicios y guía</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
           <li><a href="privacidad.html">Política de privacidad</a></li>
           <li><a href="eliminar-cuenta.html">Eliminar mi cuenta</a></li>
         </ul>

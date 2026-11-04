@@ -9,6 +9,50 @@
 
   function cada(lista, fn) { Array.prototype.forEach.call(lista, fn); }
 
+  /* ---- Menú de navegación en el móvil (va primero: no depende de nada más) ---- */
+  var botonMenu = document.querySelector('.cab__menu');
+  var menu = document.getElementById('cab-menu');
+
+  if (botonMenu && menu) {
+    var abrirMenu = function (abrir) {
+      menu.classList.toggle('abierto', abrir);
+      botonMenu.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+      botonMenu.setAttribute('aria-label', abrir ? 'Cerrar menú' : 'Abrir menú');
+    };
+
+    botonMenu.addEventListener('click', function () {
+      abrirMenu(!menu.classList.contains('abierto'));
+    });
+
+    /* Al elegir una opción, el menú se cierra. */
+    menu.addEventListener('click', function (ev) {
+      if (ev.target.closest && ev.target.closest('a')) { abrirMenu(false); }
+    });
+
+    /* Escape lo cierra y devuelve el foco al botón. */
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && menu.classList.contains('abierto')) {
+        abrirMenu(false);
+        botonMenu.focus();
+      }
+    });
+
+    /* Tocar fuera del menú lo cierra. */
+    document.addEventListener('click', function (ev) {
+      if (menu.classList.contains('abierto') && !menu.contains(ev.target) && !botonMenu.contains(ev.target)) {
+        abrirMenu(false);
+      }
+    });
+
+    /* Si la pantalla se ensancha (por ejemplo, al girar el móvil), el menú vuelve a la cabecera. */
+    if (window.matchMedia) {
+      var ancha = window.matchMedia('(min-width: 760px)');
+      var alCambiar = function (e) { if (e.matches) { abrirMenu(false); } };
+      if (ancha.addEventListener) { ancha.addEventListener('change', alCambiar); }
+      else if (ancha.addListener) { ancha.addListener(alCambiar); }
+    }
+  }
+
   var botones = document.querySelectorAll('.js-descargar');
 
   function texto(id, valor) {
@@ -30,7 +74,7 @@
     texto('datos-version', 'Estamos terminando la primera versión. Vuelve pronto.');
   }
 
-  fetch('version.json', { cache: 'no-cache' })
+  if (typeof fetch === 'function') fetch('version.json', { cache: 'no-cache' })
     .then(function (r) {
       if (!r.ok) { throw new Error('HTTP ' + r.status); }
       return r.json();

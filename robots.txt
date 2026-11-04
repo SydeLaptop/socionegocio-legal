@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sydelaptop.github.io/socionegocio-legal/sitemap.xml

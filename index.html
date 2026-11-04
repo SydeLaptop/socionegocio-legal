@@ -35,13 +35,14 @@
 <header class="cab">
   <div class="cab__in">
     <a class="cab__logo" href="#inicio" aria-label="SocioNegocio, inicio"><img src="img/logo-horizontal-oscuro.svg" width="115" height="34" alt="SocioNegocio"></a>
-    <nav class="cab__nav" aria-label="Principal">
+    <nav class="cab__nav" id="cab-menu" aria-label="Principal">
       <a href="#instalar">Cómo instalar</a>
       <a href="#negocios">Para negocios</a>
       <a href="servicios.html">Servicios</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
     <a class="btn btn--sm js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar">Descargar</a>
+    <button class="cab__menu" type="button" aria-expanded="false" aria-controls="cab-menu" aria-label="Abrir menú"><span class="cab__menu-barras" aria-hidden="true"></span></button>
   </div>
 </header>
 <main id="contenido">
@@ -92,6 +93,7 @@
         <p>Hecha en Cuba para apoyar la economía local: que la gente encuentre lo que emprenden sus vecinos, y que cada emprendedor se dé a conocer.</p>
       </li>
     </ul>
+    <p class="reveal" style="margin:26px 0 0">¿Buscas un negocio? Mira la <a href="servicios.html#clientes">guía para clientes</a>. ¿Tienes uno? Mira la <a href="servicios.html#emprendedores">guía para emprendedores</a>.</p>
   </div>
 </section>
 
@@ -202,6 +204,7 @@
     <div class="gratis reveal">
       <p><strong>Tu primer negocio es gratis, y también hasta 4 publicaciones activas a la vez en cada negocio.</strong></p>
       <p class="nota" style="margin:0">Para tener más de 4 publicaciones activas a la vez, y en opciones como negocios adicionales, videos de más de 15 segundos o destacar tu negocio, hay un costo. Las publicaciones se eliminan solas a los 10 días; si la fijas o la impulsas, siguen visibles mientras lo estén. La app te lo muestra antes de que confirmes nada. <a href="servicios.html">Ver servicios y precios</a>.</p>
+      <p style="margin:14px 0 0"><a href="servicios.html#servicios">Ver servicios y precios</a> · <a href="servicios.html#emprendedores">Guía para emprendedores</a></p>
     </div>
     <a class="btn btn--grande js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar y registrar mi negocio">Descargar y registrar mi negocio</a>
   </div>
@@ -215,7 +218,7 @@
         <img src="img/pepito-pensar.webp" data-anim="img/pepito-pensar-anim.webp" width="240" height="279" alt="Pepito, tu guía" loading="lazy" decoding="async">
       </div>
     <h2 class="reveal">Preguntas frecuentes</h2>
-    <details class="reveal"><summary>¿Es gratis?</summary><div class="resp"><p>Sí. Descargar y usar SocioNegocio no cuesta nada. Registrar tu primer negocio y tener hasta 4 publicaciones activas a la vez en cada negocio también es gratis. Algunas opciones para negocios tienen costo (más publicaciones, videos más largos, negocios adicionales y destacar tu negocio), y la app te lo muestra antes de que confirmes.</p></div></details>
+    <details class="reveal"><summary>¿Es gratis?</summary><div class="resp"><p>Sí. Descargar y usar SocioNegocio no cuesta nada. Registrar tu primer negocio y tener hasta 4 publicaciones activas a la vez en cada negocio también es gratis. Algunas opciones para negocios tienen costo (más publicaciones, videos más largos, negocios adicionales y destacar tu negocio), y la app te lo muestra antes de que confirmes. Mira todos los servicios y sus precios en <a href="servicios.html#servicios">Servicios y guía</a>.</p></div></details>
     <details class="reveal"><summary>¿Necesito internet para usarla?</summary><div class="resp"><p>Para ver los negocios y publicaciones que ya cargaste, no siempre. Para crear tu cuenta, publicar, comentar o subir fotos y videos, sí necesitas conexión.</p></div></details>
     <details class="reveal"><summary>¿Qué permisos pide?</summary><div class="resp">
       <p>Estos son todos los permisos que la app pide según su archivo de instalación (sin contar uno interno que Android agrega para proteger a la propia app):</p>
@@ -249,7 +252,7 @@
     <h2>Empieza hoy</h2>
     <p>SocioNegocio es gratis y se instala en 3 pasos.</p>
     <a class="btn btn--oscuro btn--grande js-descargar" href="https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk" data-texto="Descargar para Android">Descargar para Android</a>
-    <p class="nota">Para teléfonos Android 7.0 o superior</p>
+    <p class="nota">Para teléfonos Android 7.0 o superior · <a href="servicios.html">Ver servicios y guía</a></p>
   </div>
 </section>
 
@@ -266,6 +269,7 @@
         <ul>
           <li><a href="#instalar">Cómo instalar</a></li>
           <li><a href="servicios.html">Servicios y guía</a></li>
+          <li><a href="#preguntas">Preguntas frecuentes</a></li>
           <li><a href="privacidad.html">Política de privacidad</a></li>
           <li><a href="eliminar-cuenta.html">Eliminar mi cuenta</a></li>
         </ul>

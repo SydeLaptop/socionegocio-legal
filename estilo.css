@@ -244,3 +244,43 @@ body.revision .borrador{display:inline-block;background:#fff3c4;color:#5a4200;bo
 .sv-total{margin:auto 0 0;padding-top:12px;border-top:1px solid var(--linea-cafe);font-size:.93rem;color:var(--crema)}
 .sv-total b{font:700 1.15rem var(--f-titulos);color:var(--oro);margin-left:4px}
 .sv-aparte{margin-top:26px}
+
+/* ---------- Navegación entre páginas ----------
+   En el móvil el menú de la cabecera estaba oculto y solo se podía pasar de una página a otra desde el pie.
+   Ahora hay un botón de menú. Sin JavaScript, los enlaces se muestran en una fila bajo el logo. */
+.cab__menu{display:none;align-items:center;justify-content:center;width:46px;height:46px;margin-left:8px;padding:0;background:transparent;border:1px solid var(--linea-cafe);border-radius:12px;color:var(--crema);cursor:pointer}
+.cab__menu:hover{border-color:var(--oro);color:var(--oro)}
+.cab__menu-barras,.cab__menu-barras::before,.cab__menu-barras::after{display:block;width:20px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+.cab__menu-barras{position:relative}
+.cab__menu-barras::before,.cab__menu-barras::after{content:"";position:absolute;left:0}
+.cab__menu-barras::before{top:-6px}
+.cab__menu-barras::after{top:6px}
+.cab__menu[aria-expanded="true"] .cab__menu-barras{background:transparent}
+.cab__menu[aria-expanded="true"] .cab__menu-barras::before{transform:translateY(6px) rotate(45deg)}
+.cab__menu[aria-expanded="true"] .cab__menu-barras::after{transform:translateY(-6px) rotate(-45deg)}
+.cab__nav a[aria-current="page"]{color:var(--oro)}
+@media(max-width:759.98px){
+  .js .cab__menu{display:inline-flex}
+  .js .cab__nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;margin:0;padding:4px 20px 12px;background:var(--cafe);border-bottom:1px solid var(--linea-cafe);box-shadow:0 14px 28px rgba(0,0,0,.35)}
+  .js .cab__nav.abierto{display:flex}
+  .js .cab__nav a{padding:15px 2px;border-top:1px solid var(--linea-cafe);font-size:1rem}
+  .js .cab__nav a:first-child{border-top:0}
+  html:not(.js) .cab__in{flex-wrap:wrap}
+  html:not(.js) .cab__nav{display:flex;flex-wrap:wrap;gap:2px 18px;width:100%;order:3;margin:0}
+}
+@media(prefers-reduced-motion:reduce){.cab__menu-barras,.cab__menu-barras::before,.cab__menu-barras::after{transition:none}}
+
+/* ---------- Tarjetas de enlace («Sigue explorando») ---------- */
+.sv-links{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+@media(min-width:760px){.sv-links{grid-template-columns:repeat(2,1fr)}}
+.sv-links a{display:block;height:100%;min-height:44px;padding:18px 20px;background:#fff;border:1px solid var(--linea);border-radius:var(--radio);color:var(--texto);text-decoration:none}
+.sv-links a:hover{border-color:var(--oro-oscuro)}
+.sv-links b{display:block;margin-bottom:4px;font:700 1.05rem var(--f-titulos);color:var(--texto)}
+.sv-links span{color:var(--texto-suave);font-size:.93rem}
+
+/* Pantallas muy estrechas (320 a 400 px): la cabecera con logo, «Descargar» y menú debe caber sin salirse. */
+@media(max-width:400px){
+  .cab__in{gap:10px;padding-left:14px;padding-right:14px}
+  .cab .btn--sm{padding:8px 12px}
+  .cab__menu{margin-left:0}
+}
