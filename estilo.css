@@ -44,7 +44,7 @@ a{color:var(--enlace)}
 .cab__nav a{color:var(--crema);text-decoration:none;font-weight:600;font-size:.95rem;padding:12px 2px}
 .cab__nav a:hover{color:var(--oro)}
 .cab .btn{margin-left:auto}
-@media(min-width:760px){.cab__nav{display:flex}.cab .btn{margin-left:0}}
+@media(min-width:900px){.cab__nav{display:flex}.cab .btn{margin-left:0}}
 
 /* ---------- Secciones ---------- */
 .seccion{padding:60px 0}
@@ -259,7 +259,7 @@ body.revision .borrador{display:inline-block;background:#fff3c4;color:#5a4200;bo
 .cab__menu[aria-expanded="true"] .cab__menu-barras::before{transform:translateY(6px) rotate(45deg)}
 .cab__menu[aria-expanded="true"] .cab__menu-barras::after{transform:translateY(-6px) rotate(-45deg)}
 .cab__nav a[aria-current="page"]{color:var(--oro)}
-@media(max-width:759.98px){
+@media(max-width:899.98px){
   .js .cab__menu{display:inline-flex}
   .js .cab__nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;margin:0;padding:4px 20px 12px;background:var(--cafe);border-bottom:1px solid var(--linea-cafe);box-shadow:0 14px 28px rgba(0,0,0,.35)}
   .js .cab__nav.abierto{display:flex}

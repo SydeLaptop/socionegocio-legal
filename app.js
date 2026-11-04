@@ -46,7 +46,7 @@
 
     /* Si la pantalla se ensancha (por ejemplo, al girar el móvil), el menú vuelve a la cabecera. */
     if (window.matchMedia) {
-      var ancha = window.matchMedia('(min-width: 760px)');
+      var ancha = window.matchMedia('(min-width: 900px)');
       var alCambiar = function (e) { if (e.matches) { abrirMenu(false); } };
       if (ancha.addEventListener) { ancha.addEventListener('change', alCambiar); }
       else if (ancha.addListener) { ancha.addListener(alCambiar); }
@@ -101,21 +101,25 @@
 
       if (v.notas && v.notas.length) {
         var lista = document.getElementById('v-notas');
-        lista.textContent = '';
-        v.notas.forEach(function (nota) {
-          var li = document.createElement('li');
-          li.textContent = nota;
-          lista.appendChild(li);
-        });
-        lista.hidden = false;
+        if (lista) {
+          lista.textContent = '';
+          v.notas.forEach(function (nota) {
+            var li = document.createElement('li');
+            li.textContent = nota;
+            lista.appendChild(li);
+          });
+          lista.hidden = false;
+        }
       }
 
       if (v.sha256) {
         texto('v-huella', v.sha256);
-        document.getElementById('v-huella-bloque').hidden = false;
+        var bloqueHuella = document.getElementById('v-huella-bloque');
+        if (bloqueHuella) { bloqueHuella.hidden = false; }
       }
 
-      document.getElementById('detalle-version').hidden = false;
+      var detalle = document.getElementById('detalle-version');
+      if (detalle) { detalle.hidden = false; }
     })
     .catch(function () { /* sin datos de versión: se queda la página básica */ });
 
