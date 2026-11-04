@@ -220,3 +220,27 @@ body.revision .borrador{display:inline-block;background:#fff3c4;color:#5a4200;bo
   .legal td{border:0;padding:4px 14px}
   .legal td[data-et]::before{content:attr(data-et);display:block;font-weight:600;font-size:.8rem;color:var(--texto-suave)}
 }
+
+/* ---------- Servicios y guía (servicios.html) ----------
+   Bloque nuevo, agregado al final. Todas las clases empiezan con "sv-": no cambia ninguna regla anterior. */
+.sv-tabs{list-style:none;margin:28px 0 0;padding:0 0 4px;display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.sv-tabs::-webkit-scrollbar{display:none}
+.sv-tabs a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid var(--linea-cafe);border-radius:999px;color:var(--crema);text-decoration:none;font-weight:600;font-size:.92rem;white-space:nowrap;transition:border-color .2s,color .2s}
+.sv-tabs a:hover{border-color:var(--oro);color:var(--oro)}
+@media(min-width:860px){.sv-tabs{flex-wrap:wrap;overflow:visible}}
+
+.sv-grid{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+@media(min-width:760px){.sv-grid{grid-template-columns:repeat(2,1fr)}.sv-grid>li:last-child:nth-child(odd){grid-column:1/-1}}
+.sv-card{background:var(--cafe-2);border:1px solid var(--linea-cafe);border-radius:var(--radio);padding:24px 22px;display:flex;flex-direction:column}
+.sv-card h3{font-size:1.2rem;color:var(--oro-claro);margin:0 0 8px}
+.sv-card p{margin:0 0 .8em;color:var(--suave-cafe)}
+.sv-precios{list-style:none;margin:6px 0 14px;padding:0}
+.sv-precios li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid var(--linea-cafe);color:var(--crema)}
+.sv-precios li:last-child{border-bottom:1px solid var(--linea-cafe)}
+.sv-precios b{font:700 1.25rem var(--f-titulos);color:var(--oro);white-space:nowrap}
+.sv-card .sv-nota{font-size:.88rem}
+.sv-card .sv-conviene{margin:auto 0 0;padding-top:6px;font-size:.93rem;color:var(--crema)}
+.sv-conviene strong{color:var(--oro-claro)}
+.sv-total{margin:auto 0 0;padding-top:12px;border-top:1px solid var(--linea-cafe);font-size:.93rem;color:var(--crema)}
+.sv-total b{font:700 1.15rem var(--f-titulos);color:var(--oro);margin-left:4px}
+.sv-aparte{margin-top:26px}
