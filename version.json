@@ -1,17 +1,15 @@
 {
   "disponible": true,
   "version": "1.0.0",
-  "compilacion": 13,
+  "compilacion": 14,
   "fecha": "20 de noviembre de 2026",
   "tamano_mb": 62.3,
-  "sha256": "d5d4181010fbb3eb439033de78eb544424377a4e23014f103f67aca785171fe9",
+  "sha256": "255c82bf07f7eaaea690a085f5b163717e43001fd6adcbd38bab768945d50569",
   "android_minimo": "7.0",
   "url_descarga": "https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk",
   "notas": [
-    "Avisos más claros: si algo falla o no hay Internet, te lo explicamos con palabras sencillas.",
-    "Ahora puedes editar los datos de tu negocio sin conexión: se guardan en tu teléfono y se envían solos cuando vuelva Internet.",
-    "Puedes dejar en blanco la dirección, la descripción o el teléfono de tu negocio y se borran correctamente.",
-    "Si un cambio hecho sin conexión no se puede aplicar, te avisamos para que lo revises.",
-    "Al eliminar un negocio, la pantalla se cierra sola y todo queda al día."
+    "Ahora puedes ver las publicaciones de los negocios que ya visitaste, aunque no tengas Internet.",
+    "Sin conexión ya no te pedimos iniciar sesión para comentar: tu sesión sigue abierta.",
+    "Si un video necesita Internet para verse, te lo explicamos con claridad."
   ]
 }
