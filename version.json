@@ -1,15 +1,16 @@
 {
   "disponible": true,
   "version": "1.0.0",
-  "compilacion": 14,
+  "compilacion": 15,
   "fecha": "20 de noviembre de 2026",
-  "tamano_mb": 62.3,
-  "sha256": "255c82bf07f7eaaea690a085f5b163717e43001fd6adcbd38bab768945d50569",
+  "tamano_mb": 62.4,
+  "sha256": "bbaf735bcb3b6599eeb55251212c79a7bcbe505557a1bc9becd461d35058b1be",
   "android_minimo": "7.0",
   "url_descarga": "https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk",
   "notas": [
-    "Ahora puedes ver las publicaciones de los negocios que ya visitaste, aunque no tengas Internet.",
-    "Sin conexión ya no te pedimos iniciar sesión para comentar: tu sesión sigue abierta.",
-    "Si un video necesita Internet para verse, te lo explicamos con claridad."
+    "Ahora puedes editar, fijar, impulsar o eliminar tus publicaciones directamente desde el Feed, con los tres puntitos.",
+    "La etiqueta Fijado y el menú de opciones conviven sin estorbarse.",
+    "Ya puedes escribir la letra Ñ en el número de transacción al reportar tu pago.",
+    "Si un video pesa demasiado, te lo explicamos con un mensaje claro y sencillo."
   ]
 }
