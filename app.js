@@ -2,8 +2,8 @@
    1) Los datos de la versión salen de version.json. Si no se pueden leer, la página funciona igual:
       los botones de descarga ya apuntan a la última versión publicada.
    2) Aparición suave de los bloques al desplazarse (respeta "reducir movimiento").
-   3) Pepito: se cierra la burbuja al tocar. Su versión animada (250 a 370 KB) NO se descarga sola, para no gastar
-      los datos de nadie: solo si la persona toca a Pepito (y no tiene activado "reducir movimiento"). */
+   3) A-zere: se cierra la burbuja al tocar. Su versión animada (360 a 450 KB) NO se descarga sola, para no gastar
+      los datos de nadie: solo si la persona toca a A-zere (y no tiene activado "reducir movimiento"). */
 (function () {
   'use strict';
 
@@ -138,12 +138,12 @@
     cada(document.querySelectorAll('.reveal'), function (e) { e.classList.add('visible'); });
   }
 
-  /* ---- Cerrar la burbuja de Pepito, y animarlo solo si lo tocan ---- */
+  /* ---- Cerrar la burbuja de A-zere, y animarlo solo si lo tocan ---- */
   var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   document.addEventListener('click', function (ev) {
     var t = ev.target;
-    var x = t.closest ? t.closest('.pepito__x') : null;
+    var x = t.closest ? t.closest('.azere__x') : null;
     if (x && x.parentNode) { x.parentNode.hidden = true; return; }
 
     if (!reducido && t.tagName === 'IMG' && t.getAttribute('data-anim')) {

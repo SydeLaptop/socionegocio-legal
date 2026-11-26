@@ -78,19 +78,19 @@ a{color:var(--enlace)}
 .ruta i{flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--oro)}
 .ruta b{flex:1;height:1px;background:linear-gradient(90deg,var(--oro-oscuro),var(--oro),var(--oro-oscuro));opacity:.7}
 
-/* ---------- Pepito (guía, pequeño, con burbuja que se cierra) ---------- */
+/* ---------- A-zere (guía, pequeño, con burbuja que se cierra) ---------- */
 .guia{--burbuja:#fff;display:flex;align-items:flex-end;justify-content:flex-end;gap:10px;margin:0 0 22px}
 .hero .guia,.seccion--cafe .guia{--burbuja:var(--crema)}
 .guia img{width:88px;flex:0 0 auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.28));cursor:pointer}
 .guia--hero img{pointer-events:auto}
-.pepito__burbuja{position:relative;max-width:230px;background:var(--burbuja);color:var(--cafe);font-size:.88rem;line-height:1.35;padding:11px 46px 11px 14px;border-radius:14px 14px 4px 14px;box-shadow:0 6px 18px rgba(0,0,0,.2);margin-bottom:34px}
-.seccion:not(.seccion--cafe) .pepito__burbuja{border:1px solid var(--linea)}
-.pepito__burbuja::after{content:"";position:absolute;right:-7px;bottom:12px;border:7px solid transparent;border-left-color:var(--burbuja)}
-.pepito__x{position:absolute;top:0;right:0;width:44px;height:44px;border:0;background:transparent;color:var(--cafe);font-size:1.25rem;line-height:1;cursor:pointer;border-radius:50%}
-.pepito__x:hover{background:rgba(26,18,11,.08)}
-/* Pepito va DEBAJO del teléfono, en todos los tamaños: así nunca tapa la captura */
+.azere__burbuja{position:relative;max-width:230px;background:var(--burbuja);color:var(--cafe);font-size:.88rem;line-height:1.35;padding:11px 46px 11px 14px;border-radius:14px 14px 4px 14px;box-shadow:0 6px 18px rgba(0,0,0,.2);margin-bottom:34px}
+.seccion:not(.seccion--cafe) .azere__burbuja{border:1px solid var(--linea)}
+.azere__burbuja::after{content:"";position:absolute;right:-7px;bottom:12px;border:7px solid transparent;border-left-color:var(--burbuja)}
+.azere__x{position:absolute;top:0;right:0;width:44px;height:44px;border:0;background:transparent;color:var(--cafe);font-size:1.25rem;line-height:1;cursor:pointer;border-radius:50%}
+.azere__x:hover{background:rgba(26,18,11,.08)}
+/* A-zere va DEBAJO del teléfono, en todos los tamaños: así nunca tapa la captura */
 .guia--hero{margin:-2px 0 0;justify-content:center}
-.guia--hero .pepito__burbuja{max-width:210px}
+.guia--hero .azere__burbuja{max-width:210px}
 @media(min-width:760px){.guia img{width:112px}}
 
 
