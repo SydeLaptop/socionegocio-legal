@@ -1,16 +1,14 @@
 {
   "disponible": true,
   "version": "1.0.0",
-  "compilacion": 15,
-  "fecha": "20 de noviembre de 2026",
-  "tamano_mb": 62.4,
-  "sha256": "bbaf735bcb3b6599eeb55251212c79a7bcbe505557a1bc9becd461d35058b1be",
+  "compilacion": 18,
+  "fecha": "26 de noviembre de 2026",
+  "tamano_mb": 65.5,
+  "sha256": "b92a5afe73c4a373dfb0033bc37e07cdeb13d632c5b6eb8a94c75c85136ba28a",
   "android_minimo": "7.0",
   "url_descarga": "https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk",
   "notas": [
-    "Ahora puedes editar, fijar, impulsar o eliminar tus publicaciones directamente desde el Feed, con los tres puntitos.",
-    "La etiqueta Fijado y el menú de opciones conviven sin estorbarse.",
-    "Ya puedes escribir la letra Ñ en el número de transacción al reportar tu pago.",
-    "Si un video pesa demasiado, te lo explicamos con un mensaje claro y sencillo."
+    "Al editar un comentario o una publicación con el teclado de emojis abierto, ya puedes ver lo que escribes.",
+    "Ajustes pequeños para que todo se vea más ordenado."
   ]
 }
