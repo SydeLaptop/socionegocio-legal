@@ -1,14 +1,11 @@
 {
   "disponible": true,
   "version": "1.0.0",
-  "compilacion": 18,
-  "fecha": "26 de noviembre de 2026",
-  "tamano_mb": 65.5,
-  "sha256": "b92a5afe73c4a373dfb0033bc37e07cdeb13d632c5b6eb8a94c75c85136ba28a",
+  "compilacion": 22,
+  "fecha": "28 de noviembre de 2026",
+  "tamano_mb": 65.6,
+  "sha256": "76503b81dab134f8b0dccccbedbcd660d85fe0c8495c6ae089f16da408280738",
   "android_minimo": "7.0",
   "url_descarga": "https://github.com/SydeLaptop/socionegocio-legal/releases/latest/download/SocioNegocio.apk",
-  "notas": [
-    "Al editar un comentario o una publicación con el teclado de emojis abierto, ya puedes ver lo que escribes.",
-    "Ajustes pequeños para que todo se vea más ordenado."
-  ]
+  "notas": []
 }
